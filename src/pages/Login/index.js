@@ -41,9 +41,7 @@ function Login() {
     <div className="container-principal">
       <div className="login-container">
         <h2>Entrar</h2>
-        <div className="mini-container-p1">
-          <p>Acesse sua conta para usufruir de todos os serviços disponíveis</p>
-        </div>
+
         {message.text && (
           <p className={`message ${message.type}`}>{message.text}</p>
         )} 
