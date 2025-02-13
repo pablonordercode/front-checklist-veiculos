@@ -9,6 +9,8 @@
     color: white;
     text-align: center;
     padding-top: 12vh;
+    max-width: 330px;
+    margin-left: 15px;
 }
 
 /* Container dos títulos */
