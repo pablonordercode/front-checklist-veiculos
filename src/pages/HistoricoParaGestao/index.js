@@ -12,7 +12,7 @@ const ChecklistHistory = () => {
   // Função para buscar os checklists no backend
   const fetchChecklists = async () => {
     try {
-      const response = await axios.get('https://checklist-veiculos.onrender.com/checklist/listarchecklist/');
+      const response = await axios.get('https://checklist-veiculos.onrender.com/checklist/listarchecklist');
       setChecklists(response.data);
       setFilteredChecklists(response.data); // Inicialmente, sem filtro
     } catch (error) {
