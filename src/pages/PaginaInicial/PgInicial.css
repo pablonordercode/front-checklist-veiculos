@@ -1,0 +1,163 @@
+/* Estilização geral */
+.pagina-inici-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    background: url("../../public/wallpaperFundo.png") no-repeat center center/cover;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 12vh;
+}
+
+/* Container dos títulos */
+.containerDoH2 {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 50px;
+    margin-right: 180px;
+}
+
+.containerDoH1 {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    margin-right: 110px;
+}
+
+/* Estilização dos títulos */
+.titulo-1-h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: -85px;
+}
+
+.titulo-2-h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #1a1919;
+}
+
+/* Botões centralizados abaixo do meio da tela */
+.container01-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+    width: 90%;
+    max-width: 350px;
+}
+
+.btn01, .btn02 {
+    display: block;
+    width: 93%;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn01:hover, .btn02:hover {
+    background: #0056b3;
+}
+
+/* Parágrafo abaixo dos botões */
+.paragraf {
+    margin-top: -1px;
+}
+
+.para01 {
+    font-size: 1rem;
+    color: #272626;
+    margin-bottom: 30px;
+ 
+}
+
+/* Cards organizados em linha */
+/* Container dos Cards */
+
+.card{
+    width: 100px;
+    display: flex;
+    min-width: 100px;
+    
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .cards-container {
+        flex-wrap: wrap; /* Em telas menores, permite que os cards quebrem linha */
+        justify-content: center;
+    }
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #00aaff;
+    font-size: 16px;
+    align-items: center;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .containerDoH2, .containerDoH1 {
+        text-align: center;
+    }
+
+    .container01-links {
+        width: 100%;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: -20px;
+    }
+
+    .card{
+        width: 300px;
+        align-items: center;
+        margin-bottom: 10px;
+
+        
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #00aaff;
+        font-size: 17px;
+        align-items: center;
+        margin-top: 5px;
+        
+    }
+
+    
+    .card p {
+        color: #111;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+}

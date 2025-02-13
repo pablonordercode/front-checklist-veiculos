@@ -1,0 +1,50 @@
+/* Reset básico para remover margens e paddings padrão */
+
+  
+  /* Estilização do cabeçalho */
+  .header-top {
+    margin-top: -75px;
+    width: 88%;
+    height: 72px;
+    background: linear-gradient(45deg, #1c99ec, #0c6ff1);
+    color: white;
+    text-align: center;
+    padding: 13px 10px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 13px;
+  }
+  
+  /* Título do cabeçalho */
+  .heaer-h1 {
+    font-size: 17px;
+    margin-bottom: 3px;
+    color: #fff;
+    margin-top: -10px;
+    
+  }
+  
+  /* Texto das informações */
+  .header-p {
+    font-size: 16px;
+    margin: 4px 0;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: inline-block;
+    width: 90%;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 480px) {
+    .header-h1 {
+      font-size: 20px;
+    }
+  
+    .header-p {
+      font-size: 14px;
+      padding: 4px;
+    }
+  }
+  

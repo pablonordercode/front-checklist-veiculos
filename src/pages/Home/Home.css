@@ -1,0 +1,161 @@
+/* Estilo da Home */
+.container-home {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0e7e7;
+  margin-top: 80px;
+}
+
+.menu-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-home a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 7px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+  width: 280px;
+}
+
+.menu-home a:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-gestao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 7px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+  width: 300px;
+}
+
+.icon-home {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+/* Estilo do Footer */
+.footer-container {
+  display: flex;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 10px;
+  
+}
+
+.footer-content {
+  max-width: 550px;
+  margin: auto;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f4f4f4;
+}
+
+.footer-description {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icon.facebook:hover {
+  color: #1877f2;
+}
+
+.social-icon.instagram:hover {
+  color: #e1306c;
+}
+
+.social-icon.whatsapp:hover {
+  color: #25d366;
+}
+
+.footer-rights {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* Estilo do Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 78%;
+}
+
+.modal-content h3 {
+  margin-bottom: 10px;
+}
+
+.modal-content input {
+  width: 85%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.modal-content button:hover {
+  background: #0056b3;
+}

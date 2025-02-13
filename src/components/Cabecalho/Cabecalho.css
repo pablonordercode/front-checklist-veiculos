@@ -1,0 +1,27 @@
+/* Estilização do cabeçalho */
+.cabecalho-cbc {
+    width: 100%;
+    background-color: white; /* Fundo branco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  
+  }
+  
+  /* Estilização da logo */
+  .cabecalho-logoe-cbc {
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    max-width: 80%;
+    object-fit: contain; /* Mantém a proporção correta da imagem */
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 480px) {
+    .cabecalho-logoe-cbc {
+      height: 40px; /* Reduz o tamanho da logo para telas menores */
+      max-width: 70%;
+    }
+  }
+  

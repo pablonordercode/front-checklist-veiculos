@@ -1,0 +1,132 @@
+/* ChecklistHistory.css - Mobile-First, Modern IU/UX Design */
+
+.checklist-history {
+  padding: 16px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  width: 320px;
+  margin-left: 10px;
+  
+}
+
+.checklist-history h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+.checklist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.botao-a-home{
+  text-decoration: none;
+  background-color: #1e73be;
+  padding: 10px ;
+  border-radius: 10%;
+  color: #ececec;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 10px;
+}
+
+.checklist-item {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.checklist-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checklist-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checklist-summary p {
+  margin: 15px;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.expand-button {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #3498db;
+  
+}
+
+.expand-button:hover {
+  color: #1e73be;
+  transform: rotate(90deg);
+}
+
+.checklist-details {
+  margin-top: 12px;
+  padding: 12px;
+  border-top: 1px solid #ececec;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+
+.delete-button {
+  background: transparent;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+.delete-button:hover {
+  color: #c0392b;
+  transform: scale(1.2);
+}
+
+.imagem-checklist {
+  max-width: 100%;
+  height: auto;
+  margin-top: 12px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .checklist-history {
+    padding: 12px;
+  }
+
+  .checklist-item {
+    padding: 12px;
+  }
+
+  .checklist-summary p {
+    font-size: 0.95rem;
+  }
+
+  .expand-button,
+  .delete-button {
+    font-size: 1.25rem;
+  }
+
+  .checklist-details {
+    padding: 10px;
+  }
+}
