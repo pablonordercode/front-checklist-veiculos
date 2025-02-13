@@ -21,26 +21,19 @@ const ChecklistHistory = () => {
   };
 
   // Função para apagar um checklist
-const deleteChecklist = async (id) => {
-  try {
-    // Chamada para deletar o checklist no backend
-    const response = await axios.delete(`https://checklist-veiculos.onrender.com/checklist/apagarchecklist/${id}`);
-    
-    // Verifica se o backend confirmou a exclusão
-    if (response.status === 200) {
-      const updatedChecklists = checklists.filter((checklist) => checklist._id !== id);
-      setChecklists(updatedChecklists);
-      setFilteredChecklists(updatedChecklists);
-    } else {
-      console.error('Erro inesperado ao apagar o checklist:', response.data);
-      alert('Erro ao apagar o checklist. Tente novamente!');
+  // Função para apagar um checklist
+  const deleteChecklist = async (id) => {
+    try {
+      const response = await axios.delete(`https://checklist-veiculos.onrender.com/checklist/apagarchecklist/${id}`);
+      if (response.status === 200) {
+        alert("Produto excluído com sucesso!");
+        setChecklists(checklists.filter(checklist => checklist._id !== id));
+      }
+    } catch (error) {
+      alert("Erro ao excluir o produto.");
     }
-  } catch (error) {
-    // Tratamento de erro com feedback ao usuário
-    console.error('Erro ao apagar o checklist:', error);
-    alert('Falha ao apagar o checklist. Verifique sua conexão ou tente novamente mais tarde.');
-  }
-};
+  };
+
 
 
   // Alternar o estado de expansão
