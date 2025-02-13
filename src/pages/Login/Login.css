@@ -24,10 +24,10 @@
 
 /* Título */
 .login-container h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #333;
-  margin-bottom: 15px;
-  margin-top: 150px;
+  margin-bottom: 70px;
+  margin-top: 10px;
   align-items: flex-start;
   margin-right: 220px;
 }
@@ -36,7 +36,7 @@
 .mini-container-p1 p {
   font-size: 1rem;
   color: #1f1f1f;
-  margin-bottom: 10px;
+  margin-top: 90px;
 }
 
 /* Input estilizado */
