@@ -152,10 +152,10 @@ function CheckList() {
           <textarea name="observacao" value={checklist.observacao} onChange={handleChange} />
         </label>
 
-        <label>
-          Adicionar Imagem:
-          <input type="file" accept="image/*" onChange={handleImagemChange} />
-        </label>
+        // <label>
+        //   Adicionar Imagem:
+        //   <input type="file" accept="image/*" onChange={handleImagemChange} />
+        // </label>
 
         <button type="submit" className="start-checklist">Salvar Check-list</button>
       </form>
