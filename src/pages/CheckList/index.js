@@ -146,7 +146,7 @@ function CheckList() {
           </label>
         ))}
 
-        {/* Campo de Observação corrigido */}
+        {/* Campo de Observação corrigido */} 
         <label>
           Observação:
           <textarea name="observacao" value={checklist.observacao} onChange={handleChange} />
