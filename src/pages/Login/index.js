@@ -7,7 +7,7 @@ import "./Login.css";
 function Login() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  const [message, setMessage] = useState({ type: "", text: "" }); // Estado para mensagens dinâmicas
+  const [message, setMessage] = useState({ type: "", text: "" }); 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
