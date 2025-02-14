@@ -42,9 +42,9 @@ function Login() {
       <div className="login-container">
         <h2>Entrar</h2>
 
-        {message.text && (
-          <p className={`message ${message.type}`}>{message.text}</p>
-        )} 
+        // {message.text && (
+        //   <p className={`message ${message.type}`}>{message.text}</p>
+        // )} 
         <form onSubmit={handleSubmit}>
           <input
             type="text"
