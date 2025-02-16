@@ -7,10 +7,11 @@ function Header() {
 
   // Dados fixos sobre o plantão para a sequência de vigia e motoristas
   const plantaoData = [
+    { vigia: "Justino", motoristas: ["Marcinho", "Janiel"] },
     { vigia: "Novim", motoristas: ["Paulinho", "Pablo"] },
     { vigia: "João", motoristas: ["Alberto", "Janiel"] },
     { vigia: "Edilson", motoristas: ["Gonsalinho", "Pablo"] },
-    { vigia: "Justino", motoristas: ["Marcinho", "Janiel"] },
+    
   ];
 
   // Função para determinar o plantão do dia considerando as 6h da manhã
