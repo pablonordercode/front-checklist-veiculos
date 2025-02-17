@@ -43,7 +43,10 @@ const ChecklistHistory = () => {
       alert("Falha ao apagar o checklist. Verifique sua conexão ou tente novamente mais tarde.");
     }
   };
+  
 
+
+  
 
   // Alternar o estado de expansão
   const toggleExpand = (id) => {
@@ -105,7 +108,8 @@ const ChecklistHistory = () => {
               </div>
               {expanded[checklist._id] && (
                 <div className="checklist-details">
-                  <p><strong>Limpeza interna do Veículo:</strong> {checklist.limpesaDoVeiculo || "Não informado"}</p>
+                  <p><strong>Macaco:</strong> {checklist.macaco || "Não informado"}</p>
+                  <p><strong>Chave de roda:</strong> {checklist.chaveDeRoda || "Não informado"}</p>
                   <p><strong>Óleo do Motor:</strong> {checklist.oleoMotor || "Não informado"}</p>
                   <p><strong>Água do Radiador:</strong> {checklist.aguaRadiador || "Não informado"}</p>
                   <p><strong>Transmissão:</strong> {checklist.transmissao || "Não informado"}</p>
