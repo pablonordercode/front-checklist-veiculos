@@ -140,7 +140,8 @@ function Historico() {
               <div className="card-details">
                 <div className="container-paragrafos">
                   <p><strong>Motorista:</strong> {checklist.motorista || "Não informado"}</p>
-                  <p><strong>Limpeza interna do Veículo:</strong> {checklist.limpesaDoVeiculo || "Não informado"}</p>
+                  <p><strong>Macaco:</strong> {checklist.macaco || "Não informado"}</p>
+                  <p><strong>Chave de roda:</strong> {checklist.chaveDeRoda || "Não informado"}</p>
                   <p><strong>Óleo do Motor:</strong> {checklist.oleoMotor || "Não informado"}</p>
                   <p><strong>Água do Radiador:</strong> {checklist.aguaRadiador || "Não informado"}</p>
                   <p><strong>Transmissão:</strong> {checklist.transmissao || "Não informado"}</p>
