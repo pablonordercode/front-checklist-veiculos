@@ -9,7 +9,8 @@ function CheckList() {
   const [imagem, setImagem] = useState(null);
   const [checklist, setChecklist] = useState({
     veiculo: "",
-    limpesaDoVeiculo: "",
+    macaco: "",
+    chaveDeRoda: "",
     oleoMotor: "",
     aguaRadiador: "",
     transmissao: "",
@@ -66,7 +67,8 @@ function CheckList() {
       alert("Checklist salvo com sucesso!");
       setChecklist({
         veiculo: "",
-        limpesaDoVeiculo: "",
+        macaco: "",
+        chaveDeRoda: "",
         oleoMotor: "",
         aguaRadiador: "",
         transmissao: "",
@@ -106,6 +108,7 @@ function CheckList() {
             <option value="Estrada">Estrada</option>
             <option value="Fiorino">Fiorino</option>
             <option value="Gol preto">Gol preto</option>
+            <option value="Gol branco">Gol branco</option>
             <option value="L-200">L-200</option>
           </select>
         </label>
@@ -124,7 +127,8 @@ function CheckList() {
 
         {[
           "oleoMotor",
-          "limpesaDoVeiculo",
+          "macaco",
+          "chaveDeRoda",
           "aguaRadiador",
           "transmissao",
           "freios",
@@ -146,16 +150,16 @@ function CheckList() {
           </label>
         ))}
 
-        {/* Campo de Observação corrigido */} 
+        {/* Campo de Observação corrigido */}
         <label>
           Observação:
           <textarea name="observacao" value={checklist.observacao} onChange={handleChange} />
         </label>
 
-        // <label>
-        //   Adicionar Imagem:
-        //   <input type="file" accept="image/*" onChange={handleImagemChange} />
-        // </label>
+        {/* <label>
+          Adicionar Imagem:
+          <input type="file" accept="image/*" onChange={handleImagemChange} />
+        </label> */}
 
         <button type="submit" className="start-checklist">Salvar Check-list</button>
       </form>
