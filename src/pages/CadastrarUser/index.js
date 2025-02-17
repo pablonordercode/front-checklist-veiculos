@@ -25,7 +25,7 @@ function Cadastro() {
       const response = await axios.post("https://checklist-veiculos.onrender.com/usuario/adduser", {
         nome,
         password,
-      }); 
+      });
 
       setSuccess(response.data.msg);
       setTimeout(() => navigate("/"), 2000); // Redireciona após sucesso
@@ -40,38 +40,52 @@ function Cadastro() {
 
   return (
     <div className="container-01">
-          <div className="contain-principal-cadastro">
-      <div className="div-do-h2"><h2 className="cadastrar-usuario">Cadastrar Usuário</h2></div>
-      {error && <p className="error-message-cad">{error}</p>}
-      {success && <p className="success-message-cad">{success}</p>}
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Nome"
-          value={nome}
-          onChange={(e) => setNome(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Senha"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Confirme sua senha"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          required
-        />
-        <button className="botao-cadastrar-user" type="submit">Cadastrar</button>
-      </form>
-      <a href="/" className="botao-voltar-home">
-        Voltar
-      </a>
-    </div>
+      <div className="contain-principal-cadastro">
+        <div className="div-do-h2"><h2 className="cadastrar-usuario">Cadastrar Usuário</h2></div>
+        <div className="msg-usuario">
+        {error && <p className="error-message-cad">{error}</p>}
+        {success && <p className="success-message-cad">{success}</p>}
+        </div>
+
+        <form onSubmit={handleSubmit}>
+
+          <div className="inputs-cad">
+            <input
+              type="text"
+              placeholder="Nome"
+              value={nome}
+              onChange={(e) => setNome(e.target.value)}
+              required
+            />
+
+            <input
+              type="password"
+              placeholder="Senha"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+
+            <input
+              type="password"
+              placeholder="Confirme sua senha"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+            />
+          </div>
+
+
+
+          <button className="botao-cadastrar-user" type="submit">Cadastrar</button>
+        </form>
+        <div className="voltar">
+        <a href="/" >
+          Voltar 
+        </a>
+        </div>
+
+      </div>
     </div>
   );
 }
