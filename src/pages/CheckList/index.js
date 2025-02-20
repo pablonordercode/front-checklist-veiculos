@@ -110,6 +110,7 @@ function CheckList() {
             <option value="Gol preto">Gol preto</option>
             <option value="Gol branco">Gol branco</option>
             <option value="L-200">L-200</option>
+            <option value="Spin">Spin</option>
           </select>
         </label>
 
