@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+
+import React, { useState, useEffect } from "react";
 import { FaInstagram, FaWhatsapp, FaHistory, FaInfoCircle, FaCarSide } from "react-icons/fa";
 import { SiAwssecretsmanager } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
@@ -27,6 +28,26 @@ function Home() {
     setSenha("");
   };
 
+  // Função para fazer a chamada ao backend
+  const fetchBackendData = async () => {
+    try {
+      const response = await fetch('https://checklist-veiculos.onrender.com/checklist/listarchecklist');
+      const data = await response.json();
+      console.log('Dados do backend:', data);
+      // Aqui você pode atualizar o estado ou fazer outras operações com os dados recebidos
+    } catch (error) {
+      console.error('Erro ao buscar dados do backend:', error);
+    }
+  };
+
+  // Configura o intervalo para chamar a função fetchBackendData a cada minuto
+  useEffect(() => {
+    const intervalId = setInterval(fetchBackendData, 180000); // 180000 ms = 3 minuto
+
+    // Limpa o intervalo quando o componente é desmontado
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="container-home">
       <Header />
@@ -45,9 +66,9 @@ function Home() {
         </a>
  
         <button className="btn-gestao" onClick={() => verificarSenha()}>
-  <SiAwssecretsmanager className="icon-home" />
-  Gestão
-</button>
+          <SiAwssecretsmanager className="icon-home" />
+          Gestão
+        </button>
 
         {/* <a href="/dashboard">
           <GrDocumentPerformance className="icon-home" />
